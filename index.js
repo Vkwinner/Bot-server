@@ -1,14 +1,14 @@
 import express from 'express';
-// import bodyParser from 'body-parser';
-// import fs from 'fs';
-// import cors from 'cors';
+import bodyParser from 'body-parser';
+import fs from 'fs';
+import cors from 'cors';
 
 const app = express();
-// app.use(bodyParser.json());
-// app.use(cors());
+app.use(bodyParser.json());
+app.use(cors());
 const port=4000;
 
-// const botResponse=JSON.parse(fs.readFileSync('./data.json'))
+const botResponseFromData=JSON.parse(fs.readFileSync('./data.json'))
  const botResponse=[
     {
         "id":1,
@@ -25,7 +25,7 @@ const port=4000;
 ]
 
 app.get('/',(req,res)=>{
-    res.send(botResponse)
+    res.send(botResponseFromData)
 })
 
 app.listen(port,()=>{
