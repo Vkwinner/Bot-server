@@ -9,7 +9,7 @@ const port=4000;
 
 const botResponse=JSON.parse(fs.readFileSync('data.json'))
 
-app.get('/',(req,res)=>{
+app.get('/api',(req,res)=>{
     console.log(botResponse)
     res.send(botResponse)
 })
@@ -17,3 +17,4 @@ app.get('/',(req,res)=>{
 app.listen(port,()=>{
     console.log(`server is listening on port http://localhost:${port} `);
 })
+module.exports = app;
