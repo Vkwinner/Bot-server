@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(cors());
 const port=4000;
 
-const botResponseFromData=JSON.parse(fs.readFileSync('./data.json')
+const botResponseFromData=JSON.parse(fs.readFileSync('./data.json'));
                                      
 app.get('/',(req,res)=>{
     res.send(botResponseFromData)
