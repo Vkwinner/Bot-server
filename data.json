@@ -2,14 +2,18 @@
 [
     {
         "id":1,
-        "content":"Hello"
+        "content":"Hi there! What can I help you with?"
     },
     {
         "id":2,
-        "content":"How are You?"
+        "content":"No problem at all!"
     },
     {
         "id":3,
-        "content":"How can i help you today?"
+        "content": "I'm sorry for any inconvenience."
+    },
+    {
+        "id":4,
+        "content": "Take care! Let me know if you need anything else."
     }
 ]
